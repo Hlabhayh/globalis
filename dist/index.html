@@ -12,20 +12,11 @@
   </head>
   <body>
     <div class="container">
-      <table id="users" class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Nom</th>
-            <th scope="col">Prénom</th>
-            <th scope="col">Âge</th>
-            <th scope="col">Couleur des yeux</th>
-            <th scope="col">Téléphone</th>
-            <th scope="col">Company</th>
-            <th scope="col">email</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <filterable-table 
+        columns='[{"label":"Nom","name":"name.last"},{"label":"Prénom","name":"name.first"},{"label":"Age","name":"age"},{"label":"Couleur des yeux","name":"eyeColor"},{"label":"Company","name":"company"},{"label":"Email","name":"email"}]' 
+        filters='[{"name":"age","type":"RANGE","allowedValues":["20-25","26-30","31-35","36-41"]},{"name":"eyeColor","type":"STRING","allowedValues":["blue","brown","green"]},{"name":"isActive","type":"BOOLEAN"},{"name":"Index","type":"NUMBER"}]' 
+        api-url="http://localhost:3000/data">
+      </filterable-table>
     </div>
     <script src="js/main.js"></script>
   </body>
