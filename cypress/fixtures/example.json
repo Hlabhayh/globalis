@@ -1,0 +1,11 @@
+{
+  "age": 38,
+  "eyeColor": "blue",
+  "name": {
+    "first": "Henson",
+    "last": "Jacobson"
+  },
+  "company": "DELPHIDE",
+  "email": "henson.jacobson@delphide.org",
+  "phone": "+1 (846) 597-3879"
+}
